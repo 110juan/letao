@@ -64,6 +64,10 @@ $(function(){
                 $form.data("bootstrapValidator").updateStatus("password","INVALID","callback");
               }
             }
-        })
+        });
+    });
+      //点击重置按钮,重置样式
+      $("[type='reset']").on("click",function(){
+        $form.data("bootstrapValidator").resetForm();
     });
 });

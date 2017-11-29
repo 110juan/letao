@@ -1,11 +1,115 @@
-body{
+
+@charset "UTF-8";
+/* body背景色 */
+.body-bg{
     background-color: #ffb2cc;
 }
 *{
     margin: 0;
     padding: 0;
-    list-style: none
+    list-style: none;
+    box-sizing: border-box;
 }
+html,body{
+    height: 100%;
+}
+/* 上外边距150px */
 .mt-150{
     margin-top:150px;
+}
+.mb_20{
+    margin-bottom:20px;
+}
+/* a标签默认样式更改 */
+a{
+    text-decoration: none;
+}
+a:hover,a:link,a:visited,a:active{
+    text-decoration: none;
+}
+/* 登录页面板文字居中 */
+.panel h4 {
+    text-align: center;
+  }
+/* 侧边栏 */
+.lt_aside{
+    height: 100%;
+    width: 180px;
+    background-color: #ffb2cc;
+    position:fixed;
+    top: 0;
+    left:0;
+    transition: all 1s;
+}
+.lt_aside.now{
+    left:-180px;
+}
+/* 圈圈圆圆圈圈页面 */
+.lt_aside .brand a{
+    width: 180px;
+    height: 50px;
+    display: block;
+    background-color: pink;
+    line-height: 50px;
+    text-align: center;
+    color:#fff;
+    font-size: 18px;
+}
+/* 用户 */
+.lt_aside .user{
+    margin-top: 30px;
+}
+/* 头像 */
+.lt_aside .user img{
+    width: 80px;
+    height: 80px;
+    display: block;
+    border-radius: 50%;
+    margin-left:45px; 
+}
+/* 用户信息 */
+.lt_aside .user p{
+    line-height: 40px;
+    color:#fff;
+    text-align: center;
+}
+/* 导航 */
+.lt_aside .nav a{
+    padding-left:30px; 
+    color: #ff6699;
+    line-height: 40px;
+}
+.lt_aside .nav a.now{
+    color:#fff;
+}
+.lt_aside .nav .child a{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    padding-left:50px; 
+}
+/* 主体部分 */
+.le_main{
+    width: 100%;
+    height: 100%;
+    padding-left:180px; 
+    transition: all 1s;
+    /* background-color:skyblue; */
+}
+.le_main.now{
+    padding-left:0; 
+}
+.le_main .le_topbar{
+    height: 50px;
+    width:100%;
+    background-color: #ffb2cc; 
+    padding: 0 30px;
+    margin-bottom:20px; 
+}
+/* le_topbar内容 */
+.le_topbar a{
+    height: 50px;
+    line-height: 50px;
+    color:#fff;
+    font-size: 18px;
 }

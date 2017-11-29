@@ -4,9 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>首页</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="lib/bootstrap-validator/css/bootstrapValidator.css">
+    <link rel="stylesheet" href="lib/nprogress/nprogress.css">
+    <link rel="stylesheet" href="css/common.css">
 </head>
+
 <body>
-    <div>登录成功</div>
+    <!-- 侧边栏 -->
+    <div class="lt_aside">
+        <div class="brand">
+            <a href="index.html">圈圈圆圆圈圈</a>
+        </div>
+        <div class="user">
+            <img src="images/19.jpg" alt="images/default.png">
+            <p>请叫我小仙女</p>
+        </div>
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="user.html" class="now">
+                        <span class="glyphicon glyphicon-user"></span>
+                        用户管理
+                    </a>
+                </li>
+                <li>
+                     <a href="javascript:;">
+                         <span class="glyphicon glyphicon-list"></span>
+                       分类管理
+                    </a>
+                    <div class="child" style="display:none">
+                        <a href="first.html">吴亦凡</a>
+                        <a href="second.html">靳 东</a>
+                    </div>
+                </li>
+                <li>
+                        <a href="product.html">
+                            <span class="glyphicon glyphicon-tags"></span>
+                            商品管理
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 主体部分 -->
+    <div class="le_main">
+        <div class="le_topbar">
+           <a href="javascript:;" class="pull-left icon-menue">
+              <span class="glyphicon glyphicon-align-justify"></span>
+            </a>
+            <a href="javascript:;" class="pull-right icon-logout">
+                <span class="glyphicon glyphicon-log-out"></span>
+            </a>
+        </div>
+        <div class="container-fluid">
+                <ol class="breadcrumb">
+                    <li><a href="#">本宝宝的管理系统</a></li>
+                    <li class="active">首页</li>
+                </ol>
+        </div>
+    </div>
+    <!-- 模态框 -->
+    <div class="modal fade" tabindex="-1" >
+            <div class="modal-dialog modal-sm">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title">警告 ! ! !</h4>
+                </div>
+                <div class="modal-body">
+                  <p>你确定你要离开本宝宝的页面嘛?</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                  <button type="button" class="btn btn-info btn_logout">退出</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <script src="lib/bootstrap-validator/js/bootstrapValidator.js"></script>
+    <script src="lib/nprogress/nprogress.js"></script>
+    <script src="lib/echarts/echarts.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
