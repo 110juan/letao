@@ -70,8 +70,11 @@ a:hover,a:link,a:visited,a:active{
 /* 用户信息 */
 .lt_aside .user p{
     line-height: 40px;
-    color:#fff;
+    color:#ff6699;
     text-align: center;
+}
+.lt_aside .user p.now{
+    color:#fff;
 }
 /* 导航 */
 .lt_aside .nav a{
@@ -112,4 +115,9 @@ a:hover,a:link,a:visited,a:active{
     line-height: 50px;
     color:#fff;
     font-size: 18px;
+}
+/* Echarts部分 */
+.pic_left,.pic_right{
+    width: 45%;
+    height: 400px;
 }
