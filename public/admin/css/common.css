@@ -1,0 +1,11 @@
+body{
+    background-color: #ffb2cc;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+.mt-150{
+    margin-top:150px;
+}
